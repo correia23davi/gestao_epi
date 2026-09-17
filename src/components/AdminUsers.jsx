@@ -40,7 +40,7 @@ export default function AdminUsers({ users, withdrawals, onUsersChanged }) {
   const handleChangePassword = async () => {
     if (pwLoading) return;
     setPwError("");
-    if (newPassword.length < 4) { setPwError("Senha mínima de 4 caracteres."); return; }
+    if (newPassword.length < 8) { setPwError("Senha mínima de 8 caracteres."); return; }
     if (newPassword !== confirmPassword) { setPwError("As senhas não coincidem."); return; }
 
     setPwLoading(true);

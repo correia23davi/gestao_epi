@@ -18,8 +18,8 @@ export default async function handler(req, res) {
       }
 
       const { password, confirmPassword } = await readJsonBody(req);
-      if (!password || String(password).length < 4) {
-        return sendJson(res, 400, { error: "Senha mínima de 4 caracteres." });
+      if (!password || String(password).length < 8) {
+        return sendJson(res, 400, { error: "Senha mínima de 8 caracteres." });
       }
       if (password !== confirmPassword) {
         return sendJson(res, 400, { error: "As senhas não coincidem." });
