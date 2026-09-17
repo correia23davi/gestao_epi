@@ -144,7 +144,7 @@ export default function AdminUsers({ users, withdrawals, onUsersChanged }) {
                 <div>
                   <label className="block text-[10px] mono text-[#4d6b52] mb-1.5 tracking-widest">NOVA SENHA</label>
                   <input type="password" value={newPassword} onChange={e => setNewPassword(e.target.value)}
-                    placeholder="Mínimo 4 caracteres"
+                    placeholder="Mínimo 8 caracteres"
                     className="w-full bg-white border border-[#ccdacc] rounded px-3 py-2 text-xs mono text-[#1a2e1c] placeholder:text-[#a8bfa8] focus:outline-none focus:border-[#3d7a52]/50 transition-colors" />
                 </div>
                 <div>
