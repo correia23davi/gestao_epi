@@ -57,7 +57,7 @@ export default function AdminRegister({ users, onUserCreated }) {
     if (!cleanLogin) { setError("Informe o login do colaborador."); return; }
     if (!age || isNaN(Number(age))) { setError("Informe a idade."); return; }
     if (!position.trim()) { setError("Informe o cargo."); return; }
-    if (password.length < 4) { setError("Senha mínima de 4 caracteres."); return; }
+    if (password.length < 8) { setError("Senha mínima de 8 caracteres."); return; }
     if (password !== confirm) { setError("As senhas não coincidem."); return; }
 
     setLoading(true);
@@ -124,7 +124,7 @@ export default function AdminRegister({ users, onUserCreated }) {
             <div>
               <label className="block text-[10px] mono text-[#4d6b52] mb-1.5 tracking-widest">SENHA INICIAL</label>
               <input type="password" value={password} onChange={e => setPassword(e.target.value)}
-                placeholder="Mínimo 4 caracteres"
+                placeholder="Mínimo 8 caracteres"
                 className="w-full bg-[#f2f7f2] border border-[#ccdacc] rounded px-3 py-2.5 text-sm mono text-[#1a2e1c] placeholder:text-[#a8bfa8] focus:outline-none focus:border-[#3d7a52]/50 transition-colors" />
             </div>
 
