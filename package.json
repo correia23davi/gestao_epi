@@ -1,0 +1,27 @@
+{
+  "name": "gestao-epi",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "Sistema de gestão de EPI (equipamentos de proteção individual) — estoque, retiradas e cadastro de colaboradores, com API própria e dados pessoais cifrados.",
+  "scripts": {
+    "dev": "vite",
+    "dev:full": "vercel dev",
+    "build": "vite build",
+    "preview": "vite preview",
+    "gen-secrets": "node scripts/generate-secrets.mjs"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "@upstash/redis": "^1.34.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^6.0.0",
+    "tailwindcss": "^4.0.0",
+    "@tailwindcss/vite": "^4.0.0",
+    "vite": "^8.0.5"
+  }
+}

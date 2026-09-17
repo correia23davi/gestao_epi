@@ -1,0 +1,28 @@
+# dependências
+node_modules/
+
+# build
+dist/
+build/
+.vercel/
+
+# variáveis de ambiente (nunca commitar segredos)
+.env
+.env.*
+!.env.example
+
+# "banco" local usado apenas em desenvolvimento sem Redis configurado
+.data/
+
+# logs
+*.log
+npm-debug.log*
+logs/
+
+# editor / SO
+.DS_Store
+.vscode/
+.idea/
+
+# typescript build info (não deveria existir mais, mas por segurança)
+*.tsbuildinfo

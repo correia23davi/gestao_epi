@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600&display=swap');
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --color-bg: #f2f7f2;
+  --color-surface: #ffffff;
+  --color-surface-2: #e8f0e8;
+  --color-border: #ccdacc;
+  --color-border-2: #b4c8b4;
+  --color-primary: #3d7a52;
+  --color-primary-dim: #2e6342;
+  --color-text: #1a2e1c;
+  --color-text-2: #4d6b52;
+  --color-text-3: #7a9480;
+  --color-green: #2d7d4a;
+  --color-red: #c0392b;
+  --color-blue: #2471a3;
+  --color-amber: #c07a1a;
+}
+
+html, body, #root {
+  height: 100%;
+  font-family: var(--font-sans);
+  background-color: var(--color-bg);
+  color: var(--color-text);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--color-border-2);
+  border-radius: 2px;
+}
+
+input, select, textarea {
+  font-family: var(--font-sans);
+}
+
+.mono {
+  font-family: var(--font-mono);
+}
